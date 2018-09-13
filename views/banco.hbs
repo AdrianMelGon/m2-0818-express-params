@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color:red">Bienvenido al van-gogh {{nombre}}</h1>
+    {{#if login}}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Van_Gogh_Twelve_Sunflowers.jpg/241px-Van_Gogh_Twelve_Sunflowers.jpg" alt="" width=100>
+    {{else}}
+        <p>NOT LOGGED IN</p>
+    {{/if}}
+    <form action="/bancoseguro?param=33" method="POST">
+        <label for="">usuario</label>
+        <input type="text" name="user" id="">
+        <label for="">password</label>
+        <input type="password" name="password" id="">
+        <button type="submit">Ver extracto cuenta</button>
+    </form>
+</body>
+</html>
